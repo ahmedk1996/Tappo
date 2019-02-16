@@ -1,0 +1,52 @@
+.sidenav a:hover, .dropdown-btn:hover {
+    color: rgb(64,51,47);
+}
+
+.list-group-item{
+    color: #4F433F;
+    background-color: transparent;
+    border-color: #efefef;
+    
+}
+.list-group-item:hover{
+    color: white;
+    background-color: #4F433F;
+}
+
+.list-group-item-success:hover{
+    color: black;
+    background-color:transparent
+}
+
+.list-group-item-success {
+    color: black ;
+    background-color:transparent;
+    border:0;
+    padding-left: 5px;
+    
+    
+}
+
+#draggablePanelList .panel-heading {
+    cursor: move;
+}
+
+.logos1 .list-inline-item img {
+    width: 60px;
+    background: rgb(239,239,239);
+  
+  }
+
+b, strong {
+    font-weight: bolder;
+    padding-right: 181px;
+    
+}
+
+.list-group-item:last-child {
+    margin-top: 10px;
+    margin-bottom:10px;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
