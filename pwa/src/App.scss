@@ -23,15 +23,22 @@
   font-size: large;
 }
 .container{
-  max-height: 50px;
+  //max-height: 50px;
+  //flex: auto;
+  width: auto;
 }
 
 
 
 .top {
-  background-color: rgb(222,222,222);
-  max-height: 400px;
+  background-color: rgb(222, 222, 222);
+  //max-height: 400px;
   height: 50px;
+  width: auto;
+  flex: auto;
+  float: center;
+  //position: relative;
+  //left: 10%;
  
 
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 
 
@@ -22,7 +21,7 @@ return(
         <div className="row" style={{paddingLeft:"14px"}} >
 
             <div >
-            <Link to='/CityMenu'> <img src="/Images/back.png" width='40px' align='center' style={{paddingTop:"30px"}}/></Link>
+            <Link to='/Menu'> <img src="/Images/back.png" alt="example33 "width='40px' align='center' style={{paddingTop:"30px"}}/></Link>
             </div>
 
             <div className="col" >

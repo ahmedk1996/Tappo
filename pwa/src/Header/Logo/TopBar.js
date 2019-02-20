@@ -3,8 +3,8 @@ import React from 'react';
 const TopBar = () => {
     return(
         
-        <div className="hslogo" style={{ marginLeft:"50px"}}>
-             <img src={'/Images/logo.png'}  />    
+        <div className="hslogo" >
+             <img src={'/Images/logo.png'} alt="example " />    
         </div>
         
     )

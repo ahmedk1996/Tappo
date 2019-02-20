@@ -4,10 +4,6 @@ import './CityMenu.scss';
 
 const CityMenu = () => {
 
-    let cards = [];
-    for (let i = 0; i < 1; i++) {
-        cards.push(<CityMenuCard />);
-    }
     
     return (
 
@@ -15,7 +11,7 @@ const CityMenu = () => {
             <div className="Menu">
         
                 <div className="cardsContainer">
-                    {cards}
+                <CityMenuCard />
                   
                 </div>
             </div >
