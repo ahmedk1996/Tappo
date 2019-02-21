@@ -2,7 +2,7 @@ import React from 'react';
 import TopBar from './Logo/TopBar.js';
 import './Logo/Logo.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return(
@@ -17,7 +17,8 @@ const Header = () => {
 <li className="dropdown-header">Customer Options</li>
 <li>Log In or Sign Up</li>
 <li>Order History </li>
-<li>Promotions</li>
+<Link to='/RSide'> <li style={{color:"black"}}>Resteraunt Side</li>       </Link>
+
 </ul>
 </div>
 </li>  
