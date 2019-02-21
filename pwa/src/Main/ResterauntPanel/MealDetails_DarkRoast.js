@@ -4,7 +4,7 @@ import Modal from 'react-awesome-modal';
 import { Link } from 'react-router-dom';
 
 
-export default class MealDetails extends React.Component {
+export default class MealDetails_DarkRoast extends React.Component {
     state = {
         products: [],
         menu1:{
@@ -18,7 +18,7 @@ export default class MealDetails extends React.Component {
         this.getProducts();
       }
       getProducts = _ =>{
-        fetch('http://localhost:3306/menu')
+        fetch('http://localhost:4000/menu')
         .then(response => response.json())
         .then(response => this.setState({ products: response.data}))
         .catch(err => console.error(err))
@@ -38,7 +38,7 @@ export default class MealDetails extends React.Component {
     
       addProduct = _ => {
         const{menu1} = this.state;
-        fetch(`http://localhost:3306/menu/add?item_name=${menu1.name}&tableN=${menu1.tableN}&personName=${menu1.personName}`)
+        fetch(`http://localhost:4000/menu/add?item_name=${menu1.name}&tableN=${menu1.tableN}&personName=${menu1.personName}`)
       .then(this.getProducts)
       .catch(err => console.error(err))
     }

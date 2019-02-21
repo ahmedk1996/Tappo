@@ -17,7 +17,7 @@ export default class App extends Component {
     this.getProducts();
   }
   getProducts = _ =>{
-    fetch('http://localhost:3306/menu')
+    fetch('http://localhost:4000/menu')
     .then(response => response.json())
     .then(response => this.setState({ products: response.data}))
     .catch(err => console.error(err))
