@@ -71,7 +71,7 @@ export default class MealDetails_OriginalBlend extends React.Component {
            
                 <div className="menu-item" data-toggle="modal" data-target="#exampleModal" >
                  <img src="/Images/hot-chocolate.png" alt="example_image"  width='70px' align='center' style={{marginBottom:"0.2em",marginLeft:"2.5em"}} />
-                    <h3  className="card-title" style={{fontSize:"1em",marginLeft:"0.5em", marginTop:"1em"}} >Hot Chocolate</h3>
+                    <h3  className="card-title" style={{fontSize:"1em",marginLeft:"1.5em", marginTop:"1em"}} >Hot Chocolate</h3>
                    
                     <h4  className="price" style={{fontSize:"1em",marginLeft:"3em", marginTop:"1.5em"}} >$2.99</h4>
                 </div>

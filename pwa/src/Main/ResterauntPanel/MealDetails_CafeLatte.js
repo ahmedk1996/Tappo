@@ -4,11 +4,11 @@ import Modal from 'react-awesome-modal';
 import { Link } from 'react-router-dom';
 
 
-export default class MealDetails_BostonCream extends React.Component {
+export default class MealDetails_CafeLatte extends React.Component {
     state = {
         products: [],
         menu1:{
-          name:'Boston Cream',
+          name:'Cafe Latte',
           tableN: 'Table Number',
           personName:'First and Last Name'
     
@@ -70,10 +70,10 @@ export default class MealDetails_BostonCream extends React.Component {
            
            
                 <div className="menu-item" data-toggle="modal" data-target="#exampleModal" >
-                 <img src="/Images/BostonCream.jpg" alt="example_image"  width='70px' align='center' style={{marginBottom:"0.2em",marginLeft:"2.5em"}} />
-                    <h3  className="card-title" style={{fontSize:"1em",marginLeft:"1em", marginTop:"1em"}} >Boston Cream</h3>
+                 <img src="/Images/cafelatte.jpg" alt="example_image"  width='70px' align='center' style={{marginBottom:"0.2em",marginLeft:"2.5em"}} />
+                    <h3  className="card-title" style={{fontSize:"1em",marginLeft:"2.3em", marginTop:"1em"}} >Cafe Latte</h3>
                    
-                    <h4  className="price" style={{fontSize:"1em",marginLeft:"3em", marginTop:"1.5em"}} >$2.99</h4>
+                    <h4  className="price" style={{fontSize:"1em",marginLeft:"3.3em", marginTop:"1.5em"}} >$2.99</h4>
                 </div>
                 <div>
                 {/* <input value={menu1.name} onChange={e => this.setState({menu1: { ...menu1, name: e.target.value}})}/> */}

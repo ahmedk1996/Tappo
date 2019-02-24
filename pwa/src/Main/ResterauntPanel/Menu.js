@@ -10,8 +10,8 @@ export default class Menu extends React.Component {
         return (
             <div className="row" >
             <Link to='/'> <img src="/Images/back.png" alt="example_image"  width='60px' align='center' style={{paddingLeft:"30px", paddingTop:"30px"}}/></Link>
-            <h5 style={{marginTop:"100px", marginRight:"250px"}}>Drinks</h5>
-              <Container style={{marginTop:"10px",marginLeft:"00px"}}>
+          <p style={{marginTop:"80px"}}>Drinks</p>
+              <Container>
                 <Row>
 
                 <Link to='/MenuItem_DarkRoast'>  <Col xxxs={{ order: 1}}><div className="menu-item" data-toggle="modal" data-target="#exampleModal" style={{width:"150px",height:"200px"}} >
@@ -20,12 +20,17 @@ export default class Menu extends React.Component {
 
                 <Link to='/MenuItem_OriginalBlend'>  <Col s={{ order: 2 }}><div className="menu-item" data-toggle="modal" data-target="#exampleModal" style={{width:"150px",height:"200px"}} >
                  <img src="/Images/originalBlend.png" alt="example_image"  width='30px' align='center' style={{marginBottom:"0.2em",marginLeft:"2.5em"}} />
-                    <h3  className="card-title" style={{fontSize:"0.7em",marginLeft:"2em", marginTop:"1em"}} >Original Blend</h3></div></Col></Link>
+                    <h3  className="card-title" style={{fontSize:"0.7em",marginLeft:"1.65em", marginTop:"1em"}} >Original Blend</h3></div></Col></Link>
                 <Link to='/MenuItem_HotChocolate'>  <Col s={{ order: 3 }}><div className="menu-item" data-toggle="modal" data-target="#exampleModal" style={{width:"150px",height:"200px"}} >
                  <img src="/Images/hot-chocolate.png" alt="example_image"  width='30px' align='center' style={{marginBottom:"0.2em",marginLeft:"2.5em"}} />
-                    <h3  className="card-title" style={{fontSize:"0.7em",marginLeft:"2em", marginTop:"1em"}} >Hot Chocolate</h3></div></Col></Link>
+                    <h3  className="card-title" style={{fontSize:"0.7em",marginLeft:"1.6em", marginTop:"1em"}} >Hot Chocolate</h3></div></Col></Link>
+                    <Link to='/MenuItem_CafeLatte'>  <Col s={{ order: 3 }}><div className="menu-item" data-toggle="modal" data-target="#exampleModal" style={{width:"150px",height:"200px"}} >
+                 <img src="/Images/cafelatte.jpg" alt="example_image"  width='30px' align='center' style={{marginBottom:"0.2em",marginLeft:"2.5em"}} />
+                    <h3  className="card-title" style={{fontSize:"0.7em",marginLeft:"2.6em", marginTop:"1em"}} >Cafe Latte</h3></div></Col></Link>
                     </Row>
                     </Container>
+     
+         
         </div>
         );
     }
