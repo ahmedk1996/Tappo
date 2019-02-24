@@ -10,7 +10,8 @@ export default class Menu extends React.Component {
         return (
             <div className="row" >
             <Link to='/'> <img src="/Images/back.png" alt="example_image"  width='60px' align='center' style={{paddingLeft:"30px", paddingTop:"30px"}}/></Link>
-              <Container style={{marginTop:"50px",marginLeft:"00px"}}>
+            <h5 style={{marginTop:"100px", marginRight:"250px"}}>Drinks</h5>
+              <Container style={{marginTop:"10px",marginLeft:"00px"}}>
                 <Row>
 
                 <Link to='/MenuItem_DarkRoast'>  <Col xxxs={{ order: 1}}><div className="menu-item" data-toggle="modal" data-target="#exampleModal" style={{width:"150px",height:"200px"}} >
