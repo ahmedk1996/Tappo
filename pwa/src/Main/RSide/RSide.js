@@ -29,6 +29,7 @@ export default class App extends Component {
     return (
 
       <div className = "App">
+      
       <p>Orders Processed Below:</p>
       <div >          {products.map(this.renderProduct)}
 </div>

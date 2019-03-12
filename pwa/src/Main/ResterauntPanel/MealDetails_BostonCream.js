@@ -77,8 +77,8 @@ export default class MealDetails_BostonCream extends React.Component {
                 </div>
                 <div>
                 {/* <input value={menu1.name} onChange={e => this.setState({menu1: { ...menu1, name: e.target.value}})}/> */}
-                <input value={menu1.tableN}onChange={e => this.setState({menu1: { ...menu1, tableN: e.target.value}})} style={{borderWidth:"0.3em", margin:"2em", marginBottom:"0.50em", flex:1}}/>
-                <input value={menu1.personName}onChange={e => this.setState({menu1: { ...menu1, personName: e.target.value}})} style={{borderWidth:"0.3em", margin:"2em", marginTop:"0.50em"}}/>
+                <input type="number"  placeholder="Table Number"onChange={e => this.setState({menu1: { ...menu1, tableN: e.target.value}})} style={{borderWidth:"0.3em", margin:"2em", marginBottom:"0.50em", flex:1}}/>
+                <input type="text"  placeholder="First and Last Name"onChange={e => this.setState({menu1: { ...menu1, personName: e.target.value}})} style={{borderWidth:"0.3em", margin:"2em", marginTop:"0.50em"}}/>
                 {/* <button onClick={this.addProduct}>Add Order</button> */}
 <input type="button" value="Add Order" onClick={() => {this.addProduct();this.openModal()}} style={{margin:"2em", marginTop:"0.30em"}} />
             <Modal visible={this.state.visible} width="500" height="150" effect="fadeInUp" onClickAway={() => this.closeModal()}>  

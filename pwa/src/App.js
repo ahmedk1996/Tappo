@@ -7,7 +7,6 @@ import { faStroopwafel, faBell, faLanguage, faUser, faEllipsisV, faPlus,faCaretD
 import Header from './Header/Header';
 
 
-
 library.add([faStroopwafel, faBell, faLanguage, faUser, faEllipsisV, faPlus,faCaretDown,faPlusSquare,faBars,faArrowsAltH])
 
 export default class App extends Component {

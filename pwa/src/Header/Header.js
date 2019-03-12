@@ -2,26 +2,46 @@ import React from 'react';
 import TopBar from './Logo/TopBar.js';
 import './Logo/Logo.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Link } from 'react-router-dom';
+import AppBar from 'material-ui/AppBar';
+import Drawer from 'material-ui/Drawer';
+import MenuItem from 'material-ui/MenuItem';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-const Header = () => {
+const styles = {
+    navBar: {'top': AppBar.height}
+  }
+
+export default class Header extends React.Component {    
+    constructor() {
+        super();
+        this.state = {open: false};
+      }
+    
+      handleToggle = () => this.setState({open: !this.state.open});
+    render(){
+
+        
     return(
     <div className="row" >
+     <MuiThemeProvider>
+        <div>
+          <AppBar style={{backgroundColor:"rgb(222, 222, 222)",height:"50px",boxShadow:"" }}
+      
+           
+            iconElementLeft={<FontAwesomeIcon onClick={this.handleToggle} icon="bars" background-color="#ebebeb"  style={{marginTop:"15px",marginLeft:"10px"}} />}
+          />
+          <Drawer
+            open={this.state.open}
+            width={200}
+            containerStyle={styles.navBar}>
+            <MenuItem>Application Setting 1</MenuItem>
+            <MenuItem>Application Setting 2</MenuItem>
+          </Drawer>
+        </div>
+      </MuiThemeProvider>
     <div > 
 
 
-<li className="list-inline-item" > <div className="dropdown" color="#ebebeb" >
-<button className="btn "  data-toggle="dropdown"><FontAwesomeIcon icon="bars" background-color="#ebebeb"  style={{marginTop:"15px",marginLeft:"10px"}} />
-<span className="caret"></span></button>
-<ul className="dropdown-menu" >
-<li className="dropdown-header">Customer Options</li>
-<li>Log In or Sign Up</li>
-<li>Order History </li>
-<Link to='/RSide'> <li style={{color:"black"}}>Resteraunt Side</li>       </Link>
-
-</ul>
-</div>
-</li>  
 
     
     </div>
@@ -31,5 +51,4 @@ const Header = () => {
     );
 
 }
-
-export default Header;
+}

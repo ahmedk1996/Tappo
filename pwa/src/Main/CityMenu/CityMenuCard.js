@@ -37,6 +37,26 @@ const CityMenuCard = () => {
               
                 </div>
                 </Link>
+                <Link to='/MenuTappo' >
+            <div className="card-box"  >
+            <div className="row">
+            <h1  className="card-title" style={{fontSize:"15px", left: "auto", marginLeft: "150px"}} >Tappo Demo Restaurant</h1> 
+
+            </div>
+            <div className="row"  >
+              <div className="col-2">
+                 <img src="/Images/logo.png" alt="example "width='80px'  style={{position: "relative",bottom: "30px"}} />
+                 <h1 className="card-title" style={{width:"105px", position: "relative",bottom: "55px",left: "170px", fontSize:"10px"}}> USE FOR DEMO </h1> 
+                 <img src="/Images/5-star.png" alt="Stars" width='60px'  style={{fontSize:"10px", position: "relative",bottom: "65px",left: "177px"}} />
+                 <h1 className="card-title"style={{width:"95px", fontSize:"10px", position: "relative",bottom: "80px",marginLeft:"7px"}}>Distance: 1 km</h1> 
+                 
+
+
+                 </div>
+                </div>
+              
+                </div>
+                </Link>
           
         </div>
 
